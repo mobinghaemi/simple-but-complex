@@ -1,15 +1,14 @@
-// Get Numbers From User
-let userNormalNumber = +prompt("Please Enter A True Num")
-let userBaseNumber = +prompt("Please Enter A Base Num")
+function converter(number = 10, base = 2) {
+    array = []
 
-// Create Higher Order Function
-const baseCreator = (funcCreator) => {
-    return funcCreator
+    if (number > 0) {
+        return converter(parseInt(number / base))
+            + (number % base) && array.push(number % base)
+    };
+    return '';
 }
-// Create Base Converter
-const converter = (normal , base) => {
-    return  normal.toString(base)
-}
-// Create Result
-const result = baseCreator(converter(userNormalNumber,userBaseNumber));
-console.log(result);
+
+
+console.log(converter(10, 2));
+
+console.log(array);
