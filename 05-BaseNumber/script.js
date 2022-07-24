@@ -8,7 +8,6 @@ function converter(number = 10, base = 2) {
     return '';
 }
 
-
 console.log(converter(10, 2));
-
 console.log(array);
+
