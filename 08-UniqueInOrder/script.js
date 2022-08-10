@@ -1,9 +1,6 @@
 const unique = iterable => {
-    
-    for (let i = 0; i < iterable.length; i++) {
+    for (let i = 0; i < iterable.length; i++)
         iterable[i] === iterable[i + 1] && iterable.splice(i, 1)
-    }
-
     return iterable
 }
 
